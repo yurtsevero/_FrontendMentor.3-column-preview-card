@@ -1,0 +1,21 @@
+@include media-lg {
+  body {
+    width: auto;
+    height: 100%;
+    @include displayFlex(row, center, center);
+  }
+  .card {
+    width: 307px;
+    height: 100%;
+    &__container {
+      width: auto;
+      height: 500px;
+      @include displayFlex(row, center, center);
+      border-radius: 8px 8px 0px 8px;
+    }
+
+    &--third {
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+}
